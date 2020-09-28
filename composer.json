@@ -38,7 +38,7 @@
             "@phpstan",
             "@phpcs"
         ],
-        "autofix": "phpcbf src tests",
+        "autofix": "phpcbf",
         "phpunit": "phpunit",
         "phpstan": "phpstan analyse",
         "phpcs": "phpcs"
