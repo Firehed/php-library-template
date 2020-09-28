@@ -1,6 +1,7 @@
 {
     "name": "your/library",
     "description": "Description of your library",
+    "keywords": [],
     "type": "library",
     "license": "MIT",
     "authors": [
