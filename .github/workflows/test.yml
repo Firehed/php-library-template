@@ -52,7 +52,6 @@ jobs:
           --no-suggest
           --prefer-dist
           ${{ matrix.dep-version }}
-          --optimize-autoloader
 
       - name: PHPUnit
         run: composer phpunit

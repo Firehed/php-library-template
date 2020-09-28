@@ -35,7 +35,6 @@ jobs:
           --no-interaction
           --no-progress
           --no-suggest
-          --optimize-autoloader
           --prefer-dist
 
       - name: PHPCS
