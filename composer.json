@@ -41,6 +41,6 @@
         "autofix": "phpcbf src tests",
         "phpunit": "phpunit",
         "phpstan": "phpstan analyse",
-        "phpcs": "phpcs src tests"
+        "phpcs": "phpcs"
     }
 }
