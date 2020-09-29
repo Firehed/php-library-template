@@ -28,6 +28,7 @@
         "php": "^7.3 || ^8.0"
     },
     "require-dev": {
+        "maglnet/composer-require-checker": "^2.1",
         "phpstan/phpstan": "^0.12.46",
         "phpstan/phpstan-phpunit": "^0.12.16",
         "phpstan/phpstan-strict-rules": "^0.12.5",
