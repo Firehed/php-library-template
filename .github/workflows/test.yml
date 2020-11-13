@@ -47,14 +47,24 @@ jobs:
             ${{ runner.os }}-php-${{ matrix.dependencies }}-
             ${{ runner.os }}-php-
 
-      - name: Install dependencies
+      - name: Install highest dependencies
+        if: ${{ matrix.dependencies == "high" }}
         run: composer update
           --no-ansi
           --no-interaction
           --no-progress
           --no-suggest
           --prefer-dist
-          $([ "${{ matrix.dependencies }}" = "low" ] && echo -n '--prefer-lowest')
+
+      - name: Install lowest dependencies
+        if: ${{ matrix.dependencies == "low" }}
+        run: composer update
+          --no-ansi
+          --no-interaction
+          --no-progress
+          --no-suggest
+          --prefer-dist
+          --prefer-lowest
 
       - name: PHPUnit
         run: vendor/bin/phpunit
