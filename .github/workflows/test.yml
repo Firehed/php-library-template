@@ -48,7 +48,7 @@ jobs:
             ${{ runner.os }}-php-
 
       - name: Install highest dependencies
-        if: ${{ matrix.dependencies == "high" }}
+        if: ${{ matrix.dependencies == 'high' }}
         run: composer update
           --no-ansi
           --no-interaction
@@ -57,7 +57,7 @@ jobs:
           --prefer-dist
 
       - name: Install lowest dependencies
-        if: ${{ matrix.dependencies == "low" }}
+        if: ${{ matrix.dependencies == 'low' }}
         run: composer update
           --no-ansi
           --no-interaction
