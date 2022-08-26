@@ -73,6 +73,8 @@ jobs:
       - name: PHPUnit
         run: vendor/bin/phpunit
           --coverage-clover coverage.xml
+          --coverage-text
+          --printer mheap\\GithubActionsReporter\\Printer
 
       - name: Submit code coverage
         if: ${{ always() }}
