@@ -3,7 +3,7 @@ name: Composer validate
 on:
   push:
     branches:
-      - master
+      - $default-branch
   pull_request:
     # Run on all PRs
 
