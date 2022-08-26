@@ -28,6 +28,7 @@
         "php": "^7.3 || ^8.0"
     },
     "require-dev": {
+        "mheap/phpunit-github-actions-printer": "^1.5",
         "phpstan/phpstan": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpstan/phpstan-strict-rules": "^1.0",
