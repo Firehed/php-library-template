@@ -4,7 +4,8 @@ includes:
     - vendor/phpstan/phpstan-strict-rules/rules.neon
 parameters:
     ignoreErrors:
-        - '#^Dynamic call to static method PHPUnit\\Framework\\Assert::assert#'
+        # Uncomment to permit $this->assertXX() in unit tests (instead of self::assertXX())
+        # '#^Dynamic call to static method PHPUnit\\Framework\\Assert::assert#'
     level: max
     paths:
         - src
