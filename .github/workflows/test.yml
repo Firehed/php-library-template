@@ -20,9 +20,10 @@ jobs:
           - 'high'
           - 'low'
         php:
-          - '7.3'
           - '7.4'
           - '8.0'
+          - '8.1'
+          - '8.2'
 
     steps:
       - name: Check out code
